@@ -1,0 +1,9 @@
+---
+- name: Deploy LAMP Stack
+  hosts: your_target_group
+  become: true
+  roles:
+    - common
+    - apache
+    - mysql
+    - php

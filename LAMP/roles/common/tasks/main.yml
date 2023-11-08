@@ -1,0 +1,9 @@
+---
+- name: Install common packages
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - unzip
+    - vim
+  become: yes
